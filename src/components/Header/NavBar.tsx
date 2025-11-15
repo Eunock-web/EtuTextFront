@@ -1,6 +1,6 @@
 import { GraduationCap } from "lucide-react"
 import Button from "../utils/Button"
-import { Moon , Sun } from "lucide-react"
+import { Sun } from "lucide-react"
 
 function NavBar() {
     return (
