@@ -8,7 +8,7 @@ function NotFound() {
 
             <div className=" flex flex-col items-center justify-center space-y-1 ">
                 <h1 className=" text-2xl text-slate-800 font-bold dark:text-white leading-tight "> Oops! Page Not Found </h1>
-                <p className=" text-slate-800  dark:text-slate-400 leading-normal"> We can't seem to find the page you are looking for. </p>
+                <p className="text-slate-800  dark:text-slate-400 leading-normal "> We can't seem to find the page you are looking for. </p>
             </div>
 
             <div className=" flex items-center justify-center ">
