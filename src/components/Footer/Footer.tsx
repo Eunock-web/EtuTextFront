@@ -3,15 +3,15 @@ import { Twitter, Linkedin, Facebook } from "lucide-react"
 
 function Footer() {
     return (
-        <div className=" w-[70%] mx-auto flex flex-row justify-between ">
+        <div className=" w-[70%] mx-auto mb-5 flex flex-row justify-between ">
             <div>
-                <p className=" dark:text-gray-400  ">© 2025 EduText. Tous droits réservés.</p>
+                <p className=" dark:text-gray-400 text-sm  ">© 2025 EduText. Tous droits réservés.</p>
             </div>
 
             <div className=" flex flex-row gap-2 ">
-                <Twitter className="w-10 h-10 border border-gray-800 bg-gray-800 rounded-2xl p-2 dark:text-gray-400"/>
-                <Linkedin className="w-10 h-10 border border-gray-800 bg-gray-800 rounded-2xl p-2 dark:text-gray-400"/>
-                <Facebook className="w-10 h-10 border border-gray-800 bg-gray-800 rounded-2xl p-2 dark:text-gray-400"/>
+                <Twitter className="w-7 h-7  text-gray-800 rounded-full p-1 dark:text-gray-400"/>
+                <Linkedin className="w-7 h-7  bg-gray-400 rounded-xl p-1 dark:text-slate-700"/>
+                <Facebook className="w-7 h-7  bg-gray-400 rounded-full p-1 dark:text-slate-700"/>
             </div>
         </div>
     )

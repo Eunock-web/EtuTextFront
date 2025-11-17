@@ -3,7 +3,7 @@ import Button from "../utils/Button"
 
 function Hero() {
     return (
-            <div className=" flex flex-row mx-[5%] gap-3 " >
+            <div className=" flex flex-row mx-[5%] gap-3  mt-10" >
 
                 <div className="flex flex-col w-3/2 space-y-5 ">
                     <div className="flex flex-col space-y-3 justify-start">

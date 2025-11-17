@@ -1,5 +1,30 @@
 import { GraduationCap } from "lucide-react"
 
+const PreFooterList = [
+    {
+        id: 1,
+        titre: "Entreprise",
+        link1 : "A propos",
+        link2 : "Carrieres",
+        link3 : "Presse",
+    },
+
+    {
+        id : 2,
+        titre: "Légal",
+        link1 : "Condition d'utilisation",
+        link2 : "Politique de confidentialité",
+        link3 : "Politique de Cookies",
+    },
+
+    {
+        id : 3,
+        titre: "Support",
+        link1 : "Centre d'aide",
+        link2 : "Nous contacter",
+        link3 : "Statut",
+    }
+]
 
 function PreFooter() {
     return (
@@ -17,26 +42,15 @@ function PreFooter() {
             </div>
 
             <div className=" flex flex-row gap-10" >
-                <div className="flex flex-col space-y-2">
-                    <h1 className=" font-semibold "> Entreprise </h1>
-                    <p className=" text-gray-400 text-sm"> A propos </p>
-                    <p className=" text-gray-400 text-sm"> Carrieres </p>
-                    <p className=" text-gray-400 text-sm"> Presse </p>
-                </div>
+                {PreFooterList.map((item) => (
+                    <div className="flex flex-col space-y-3">
+                        <h3 className=" text-base text-white mb-4 font-semibold "> { item.titre } </h3>
+                        <a href=" # " className=" text-gray-400 text-sm hover:text-slate-600 cursor-pointer "> { item.link1 } </a>
+                        <a href=" # " className=" text-gray-400 text-sm hover:text-slate-600 cursor-pointer "> { item.link2 } </a>
+                        <a href=" # " className=" text-gray-400 text-sm hover:text-slate-600 cursor-pointer "> { item.link3 } </a>
+                    </div>
+                ))}
 
-                <div className="flex flex-col space-y-2">
-                    <h1 className=" font-semibold "> Légal </h1>
-                    <p className=" text-gray-400 text-sm"> Condition d'utilisation </p>
-                    <p className=" text-gray-400 text-sm"> Politique de confidentialité </p>
-                    <p className=" text-gray-400 text-sm"> Politique de Cookies </p>
-                </div>
-
-                <div className="flex flex-col space-y-2">
-                    <h1 className=" font-semibold "> Support </h1>
-                    <p className=" text-gray-400 text-sm"> Centre d'aide </p>
-                    <p className=" text-gray-400 text-sm"> Nous contacter </p>
-                    <p className=" text-gray-400 text-sm"> Statut </p>
-                </div>
             </div>
         </div>
     )
