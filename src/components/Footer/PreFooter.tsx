@@ -28,7 +28,7 @@ const PreFooterList = [
 
 function PreFooter() {
     return (
-        <div className=" grid  w-[70%] mx-auto sm:grid-cols-1 sm:items-center sm:justify-center lg:grid-cols-2  flex-row justify-center items-center gap-10 md:gap-20">
+        <div className=" grid  w-[85%] mx-auto sm:grid-cols-1 sm:items-center sm:justify-center lg:grid-cols-2  flex-row justify-center items-center gap-10 md:gap-20">
 
             <div className=" grid grid-cols-1 flex-col space-y-3 " >
                 <div className=" flex flex-row gap-2 " >
@@ -41,7 +41,7 @@ function PreFooter() {
                 </div>
             </div>
 
-            <div className=" grid grid-cols-1 flex-row gap-10 md:gap-15 lg:grid-cols-3 sm:grid-cols-3 sm:items-center sm:justify-center sm:mx-auto"  >
+            <div className=" grid grid-cols-1 flex-col gap-10 md:gap-10 lg:grid-cols-3 sm:grid-cols-3 sm:items-center sm:justify-center sm:mx-auto"  >
                 {PreFooterList.map((item) => (
                     <div className=" grid grid-cols-1 flex-col space-y-3">
                         <h3 className=" text-base text-white mb-4 font-semibold "> {item.titre} </h3>
