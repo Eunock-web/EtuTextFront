@@ -31,30 +31,34 @@ const MainList = [
         description: " Interagissez avec du contenu multimédia riche, des quiz et des devoirs collaboratifs directement dans le texte. "
     }
 ]
-function Main() {
-    return (
-        <div className="flex flex-col space-y-5">
-            <div className="flex flex-col space-y-1 items-center justify-center ">
-                <h1 className=" flex font-bold text-3xl text-center "> Tout ce dont vous avez besoin en un  seul endroit </h1>
-                <p className="text-center text-gray-400"> Notre plateforme est conçu pour améliorer le parcours éducatif des enseignants et des apprenants avec des outils puissants et faciles à utiliser.</p>
+    function Main() {
+        return (
+            <div className=" flex flex-col space-y-8 px-4 sm:px-6 lg:px-8 py-12" >
+            <div className="flex flex-col space-y-4 max-w-4xl mx-auto text-center">
+                <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 dark:text-white">
+                    Tout ce dont vous avez besoin en un seul endroit
+                </h1>
+                <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                    Notre plateforme est conçue pour améliorer le parcours éducatif des enseignants et des apprenants avec des outils puissants et faciles à utiliser.
+                </p>
             </div>
-            <div className=" flex flex-row gap-3 items-center justify-center  ">
+            
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto w-full px-4">
                 {MainList.map((item) => (
                     <Card
                         key={item.id}
-                        cardClassName=" w-[20%]  border border-gray-300 rounded-lg p-4 shadow-sm bg-gray-800 border-gray-800 "
+                        cardClassName="flex flex-col h-full border border-gray-200 dark:border-gray-700 rounded-xl p-6 shadow-sm bg-white dark:bg-gray-800 hover:shadow-md transition-shadow duration-300"
                         titre={item.titre}
-                        titreClassName=" font-sans my-4  "
+                        titreClassName="text-lg font-semibold text-gray-900 dark:text-white mb-3"
                         description={item.description}
-                        descriptionClassName=" text-gray-400 text-sm font-sans"
+                        descriptionClassName="text-sm text-gray-600 dark:text-gray-300 flex-grow"
                         Icon={item.icon}
-                        iconClassName=" text-blue-900 w-8 h-8 "
+                        iconClassName="w-10 h-10 p-2 mb-4 rounded-lg bg-blue-100 dark:bg-blue-900/30 text-blue-600 dark:text-blue-400"
                     />
                 ))}
-
             </div>
         </div>
-    )
+        )
 }
 
 export default Main

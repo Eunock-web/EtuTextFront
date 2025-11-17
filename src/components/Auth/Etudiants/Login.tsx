@@ -3,21 +3,21 @@ import Input from "../../utils/Input"
 import { Mail, Lock, Github, EyeIcon } from "lucide-react"
 
 
-interface LoginINterface{
+interface LoginINterface {
     image: string,
-    authName : string,
-    
+    authName: string,
+
 }
 
 function Login({ image, authName }: LoginINterface) {
     return (
         <div className=" flex flex-row gap-3 justify-center items-center h-screen  ">
-             
+
             <div className=" flex flex-col p-4  bg-slate-800 border border-slate-600 rounded-xl w-[40%] ">
-                <img src={ image ||  "https://img.freepik.com/vecteurs-libre/modele-logo-ecole-education_23-2149713087.jpg?semt=ais_hybrid&w=740&q=80"} alt="" className=" rounded-xl " />
+                <img src={image || "https://img.freepik.com/vecteurs-libre/modele-logo-ecole-education_23-2149713087.jpg?semt=ais_hybrid&w=740&q=80"} alt="" className=" rounded-xl " />
             </div>
 
-             
+
             <div className=" flex flex-col space-y-5  border border-slate-600 rounded-xl p-6 w-[40%] h-[80%] justify-center ">
 
                 <div>
@@ -25,7 +25,7 @@ function Login({ image, authName }: LoginINterface) {
                 </div>
 
                 <div className=" flex flex-col  ">
-                    <h1 className=" dark:text-slate-800 font-bold text-xl text-center "> { authName || "Student Sign In" } </h1>
+                    <h1 className=" dark:text-slate-800 font-bold text-xl text-center "> {authName || "Student Sign In"} </h1>
                     <p className=" text-gray-400 "> Welcome back! Please enter your details to sign in </p>
                 </div>
 
