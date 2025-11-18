@@ -4,15 +4,17 @@ import Button from "./Button"
 function AddCoursCard(){
     return(
         <>
-            <div className=" flex flex-col space-y-4 p-4 border border-slate-600 rounded-xl bg-slate-800 ">
+            <div className=" flex flex-col space-y-4 p-4  rounded-xl w-full border border-gray-200 shadow-xl   ">
                 <div className=" flex flex-col space-y-2 ">
-                    <h1 className=" text-white font-bold text-xl "> Rejoindre un cours  </h1>
-                    <p className=" text-gray-400  "> Entrez le code d'intégration fourni par votre professeur pour envoyer une demande d'accès. </p>
-                </div>
+                    <h1 className="  font-semibold text-lg  "> Rejoindre un cours  </h1>
+                    <p className=" text-gray-500 text-sm  "> Entrez le code d'intégration fourni par votre professeur pour envoyer une demande d'accès. </p>    
 
-                <div className=" flex flex-row gap-2 bg-slate-800 p-2 ">
-                    <Input type="text" name="code" placeholder="Entrez le code du cours..." id="code" className=" p-2 rounded-lg border border-slate-600 dark:border-slate-400  " />
-                    <Button className=" bg-blue-500 dark:text-white  p-5 dark:bg-blue-400 rounded-lg "> Demander l'accès </Button>
+                    <div className=" grid grid-col-1 sm:grid-col-2 lg:grid-col-2 gap-2 ">
+                        <Input type="text" name="code" placeholder="Entrez le code du cours..." id="code" className=" p-2 rounded-lg  dark:border-slate-400 w-full bg-gray-100 " />
+                        <div className=" ">
+                            <Button className=" bg-primary/70  rounded-xl text-white  "> Demander l'accès </Button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
