@@ -1,10 +1,9 @@
-import Acceuil from "./components/pages/Acceuil";
-import Cours from "./components/pages/Etudiants/components/Cours";
+import DetailCours from "./components/pages/Etudiants/Cours/DetailCours";
 
 function App(){
     return (
         <>
-            <Acceuil />
+            <DetailCours />
         </>
     )
 }

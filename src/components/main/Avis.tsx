@@ -21,7 +21,7 @@ const AvisList = [
 function Avis() {
     return (
         <div className=" flex flex-col items-center justify-center space-y-5 ">
-            <h1 className=" font-bold text-3xl dark:text-white mx-auto items-center lg:text-2xl sm:text-xl text-center "> Apprécié par les Etudiants et les Educateurs </h1>
+            <h1 className=" font-bold text-3xl text-base-content mx-auto items-center lg:text-2xl sm:text-xl text-center "> Apprécié par les Etudiants et les Educateurs </h1>
 
             <div className=" grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-2 items-center justify-center gap-5 ">
                 {AvisList.map((item) => (

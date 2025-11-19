@@ -7,7 +7,7 @@ function Hero() {
 
             <div className="grid sm:grid-cols-1 flex-col w-3/2 space-y-5 ">
                 <div className="flex flex-col space-y-3 justify-start">
-                    <h1 className=" dark:text-5xl font-bold text-white lg:text-4xl sm:text-3xl text-2xl  "> Révolutionnez Votre Experience d'Apprentissage et d'Enseignement </h1>
+                    <h1 className=" dark:text-5xl font-bold text-base-content lg:text-4xl sm:text-3xl text-2xl  "> Révolutionnez Votre Experience d'Apprentissage et d'Enseignement </h1>
                     <p className=" dark:text-slate-400 text-lg font-normal text-gray-300"> Le hub ultime de manuels numeriques pour une planification de cours, un suivi de progression et une collaboration fluides. </p>
                 </div>
 

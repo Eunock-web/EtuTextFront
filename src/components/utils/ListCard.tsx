@@ -1,4 +1,5 @@
 import Button from "./Button"
+import { ChevronDown } from "lucide-react"
 
 interface ListeCoursInterface{
     titreCours: string,
@@ -36,7 +37,7 @@ function ListCard({titreCours, nomProf, boutonDivClassName, bouton1ClassName, bo
 
                 <div className=" flex flex-row justify-between ">
                     <p className=" font-xl font-semibold "> Notions abordées </p>
-                    <p> Voir Plus </p>
+                    <ChevronDown className=" font-xl font-semibold w-5 h-5 " />
                 </div>
             </div>
         </>

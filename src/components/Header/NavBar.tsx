@@ -7,7 +7,7 @@ function NavBar() {
 
             <div className="flex flex-row gap-2 hover:cursor-pointer">
                 <GraduationCap className="w-8 h-8 text-blue-500 dark:text-blue-400" />
-                <h1 className="text-black dark:text-white font-semibold"> EduText </h1>
+                <h1 className="text-base-content  font-semibold"> EduText </h1>
             </div>
 
             <div className="flex flex-row gap-2">
